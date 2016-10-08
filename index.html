@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <script src="js/mui.min.js"></script>
+    <script type="text/javascript" src="js/mui.calendar.js" ></script>
+    <link rel="stylesheet" href="css/calendar.css" />
+    <link href="css/mui.min.css" rel="stylesheet"/>
+</head>
+<body>
+	<div class="calendar-box contain mui-content" id="contain">
+		<!--dom1开始-->
+		<div class="guanzhu moder-">
+			<div class="calendar-slider date-box mui-slider">
+				<div class="calendar-select-time">
+		    		<!--<div class="last-time"><img src="images/calendar_left.png"></div>-->
+		    		<p class="this-time timecontent"></p>
+		    		<!--<div class="next-time"><img src="images/calendar_right.png"></div>-->
+    			</div>
+    			<div class="tab-title">
+					<div class="tab-title-tip">
+						<dl class="all-book">
+							<dt></dt>
+							<dd>已满</dd>
+						</dl>
+						<dl class="book-ing">
+							<dt></dt>
+							<dd>可拼</dd>
+						</dl>
+						<dl class="book-ing traval-photo">
+							<dd>旅拍</dd>
+						</dl>
+						<dl class="secret-book">
+							<dt></dt>
+							<dd>保密</dd>
+						</dl>
+					</div>
+					<div class="weekend-title">
+						<table cellpadding="0" cellspacing="0">
+							<tr>
+								<td>日</td>
+								<td>一</td>
+								<td>二</td>
+								<td>三</td>
+								<td>四</td>
+								<td>五</td>
+								<td>六</td>
+							</tr>
+						</table>
+					</div>
+			</div>
+			<div class="calendar-loop date-select-ul mui-slider-group mui-slider-loop calendar-">
+				<ul class="date-select mui-slider-item mui-slider-item-duplicate"></ul>
+				<ul class="date-select mui-slider-item slide-dom"></ul>
+				<ul class="date-select mui-slider-item slide-dom"></ul>
+				<ul class="date-select mui-slider-item slide-dom"></ul>
+				<ul class="date-select mui-slider-item mui-slider-item-duplicate"></ul>  
+			</div>
+		</div>
+	</div>
+		<!--dom1结束-->
+	</div>
+	<script type="text/javascript" charset="utf-8">
+      	mui.init();
+      	var curr_time = new Date();
+		var year = curr_time.getFullYear(); 
+		var month = curr_time.getMonth()+1;
+      	//日历插件
+		this.calendar = mui(".calendar-box").calendar({
+	  		clickCallback:function(){
+	  			
+	  		},//点击回调
+	  		dragCallback:function(){ 
+	  			
+	  		},//滑动回调
+	  		time:{//初始化传递时间
+	  			year:year,
+	  			month:month
+	  		},
+	  		year_unit:"年",
+	  		month_unit:"月",
+	  		day_unit:"日",
+	  		showdate:"this-time"//时间显示面板
+	    });
+    </script>
+</body>
+</html>

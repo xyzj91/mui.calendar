@@ -1,0 +1,66 @@
+/*日期选择插件样式开始*/
+.date-select-ul{ background-color: #fff;}
+.date-select{width: 100% ; margin: 0 auto !important; padding: 0; overflow: hidden; }
+.date-select .day{position:relative;float: left; width: 14.28%; text-align: center; line-height:27px; font-size: 15px; padding:3% 0; }
+.date-select .day span{height: 27px; width: 27px; border-radius: 50%; display: block; margin: 0 auto;}
+
+/*选中*/
+.date-select .day-select span{background-color: #47bb4b !important; color: #fff !important;}
+/*已满*/
+.date-select .day-lock span{background-color: #dd127b !important; color: #fff !important;}
+/*可拼单*/
+.date-select .day-pindan span{border: 1px solid #dd127b;}
+/*休息logo*/ 
+.day .rest-icon{position:absolute; bottom:20%;right:15%;height: 12px; width: 12px;position: absolute;display: none;
+background: url(../images/plane.png) left center no-repeat;background-size: 100% auto;}
+.day-rest .rest-icon{display: block;}
+
+/*点击弹出下角*/
+.day .jiao{width: 15%; position: absolute; bottom: -5px; left: 44.5%; display: none;}
+/*保密*/
+.date-select .day-secret span{background-color: #fef1f8;}/*/*/
+.date-select .day-over span{color: #dedede !important;}
+.date-select .day-normal span{color: #424242;/*background-color: #fef1f8*/
+;}
+.date-select .weekend-title{width: 100%;}
+.date-select .tab-title .tab-title-tip dl{margin-left: 11%; width: 20.4%;}
+
+
+.schedule-content .mui-col-xs-4{width: 25%;background-color:#dd127b !important;}
+.tab-title{background-color: #fff !important; padding: 4% 0; overflow: hidden;}
+.my-schedule .my-schedule-datebox{position: relative;width: 160px;height: 15px;position: relative;left: 50% !important;margin-left: -60px;}
+.weekend-title{padding-top: 5%; width: 92%; margin: 0 auto;}
+.weekend-title table{width: 100%;}
+.weekend-title table tr td{width:14.28% ; text-align: center; font-size: 15px; color: #424242;}
+.date-box{height: auto;}
+.calendar-slider{background-color: #fff;/*border-top: 1px solid #DEDEDE;*/}
+.date-box .pic-box{ border-bottom: 1px solid #dedede; overflow: hidden; background-color: #fff; padding: 2% 0;}
+.date-box .pic-dl{float: left; overflow: hidden;margin: 1% 0 0 2.7%; }
+.date-box .pic-dl dt{float: left; width: 30%;}
+.date-box .pic-dl dd{float: left; font-size:15px; color: #424242; margin: 6% 0 0 5%;}
+.date-change{float: right; margin: 4% 5% 0 0;}
+.date-detail{border-top: 1px solid #dedede; display:block;}
+.schedule-title{background-color: #EFEFF4;position: fixed !important; top: 44px !important; left: 50%; margin-left: -375px;  overflow: hidden; z-index: 100; width: 100%; max-width: 750px; min-width: 320px;}
+.mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active{border-bottom: 2px solid #DD127B;}
+.date-contain{margin-top: 38%;}
+.my-schedule .my-schedule-btn-l,.my-schedule .my-schedule-btn-r{border: none;background: url(../images/calendar_left.png) no-repeat;height: 18px;background-size:35%;width: 20px;height: 26px;position: absolute;}
+.my-schedule .my-schedule-btn-r{background-image: url(../images/calendar_right.png);}
+.my-schedule .my-schedule-date{font-size: 18px;color: #424242;display: inline-block;text-align: center;margin: 0 30px 0 35px;}
+.tab-title{background-color: #fff !important; padding: 4% 0; overflow: hidden;}
+.tab-title .tab-title-tip { overflow: hidden;}
+.tab-title .tab-title-tip dl{overflow: hidden; float: left;width: 15.3%; margin-left: 9%;line-height: 12px;}
+.tab-title .tab-title-tip dl dt{float: left; width: 12px; height: 12px; border-radius: 50%; }
+.tab-title .tab-title-tip dl dd{float: left;margin-left: 3%; font-size: 12px; color: #8a8a8a;}
+.tab-title .tab-title-tip dl.all-book dt{background-color: #ea0aaf;}
+.tab-title .tab-title-tip dl.book-ing dt{border: 1px solid #ea0aaf;}
+.tab-title .tab-title-tip dl.secret-book dt{background-color: #fef1f8;}
+.my-schedule-button{/*border: 2px solid #fff !important;*/ line-height: 34px !important;height: 34px !important;}
+.shedule-tip{font-size: 10px;background-color: #fff400;text-align: center;color: #333;height: 21px;}
+ul,li{list-style: none;}
+.calendar-select-time{overflow: hidden; width: 100%;padding: 4% 0 2% 0; background-color: #fff; border-bottom: 1px solid #dedede;}
+.calendar-select-time .this-time{font-size:18px ;line-height: 18px; color: #424242;text-align: center;}
+.calendar-select-time .last-time{width: 3%; float: left; margin-right: 30px;}
+.calendar-select-time .next-time{width: 3%; float: left; margin-left: 30px;}
+.traval-photo{color: #3caeeb; background: url(../images/plane.png) 38% center no-repeat; background-size: 6% auto;}
+.day .jiao{background: url(../images/triangle.png) no-repeat center;width: 12px; height: 6px; position: absolute; bottom:0;height: 12px; left: 20px; display: none;}
+.day-select .jiao{display: block;}
